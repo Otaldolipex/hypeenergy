@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Krona+One&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
+:root {
+    --escrita-principal: #00030C;
+    --roxo-secundario: #5b0888;
+    --botao-azul: #167BF7;
+    --cor-fundo: #ffffff;
+    --fonte-principal: 'Bree Serif', serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--escrita-principal);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cabecalho {
+    padding: 1% 0% 0% 1%;
+    background-color: var(--roxo-secundario);
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_logo {
+    width: 5%;
+}
+
+.cabecalho_texto {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0.9em;
+    color: var(--cor-fundo);
+}
+
+.principal{
+    background-image: url("./img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container{
+    height: 125vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_caixa {
+    padding: 5% 5%;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_ener {
+    margin: 1em 0 2em 0;
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+}
+
+.secundario_imagem {
+    width: 80%;
+    margin: 0 2em;
+}
+
+.descricao_titulo {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--roxo-secundario);
+}
+
+.descricao_texto {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 1em;
+    color: var(--escrita-principal);
+}
+
+.container_botao {
+    background-color: var(--roxo-secundario);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-fundo);
+    display: block;
+    text-decoration: none;
+}
+
+.secundario_botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+footer {
+    background-color: var(--roxo-secundario);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
